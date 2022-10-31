@@ -170,7 +170,10 @@ for (let data of issue.getData()){
     console.log
 }
 
-//parinkimas
+
+
+
+//parinkimas******** ***
 const article = document.getElementById('vip');
 const articles = document.getElementsByTagName('article');
 const purple = document.getElementsByClassName('purple');
@@ -181,3 +184,10 @@ const allArticles = document.querySelectorAll('article')
 //console.log(purple)
 //console.log(purpleQuery)
 console.log(allArticles)
+
+
+//uzdedame elementui atributa purple klasei
+const purple = document.querySelector('.purple');
+purple.addEventListener('click', ()=>{
+    purple.style.backgroundColor = 'purple';
+})
