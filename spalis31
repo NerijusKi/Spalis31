@@ -170,4 +170,14 @@ for (let data of issue.getData()){
     console.log
 }
 
+//parinkimas
+const article = document.getElementById('vip');
+const articles = document.getElementsByTagName('article');
+const purple = document.getElementsByClassName('purple');
+const purpleQuery = document.querySelector('.purple');
+const allArticles = document.querySelectorAll('article')
 
+//console.log(articles)
+//console.log(purple)
+//console.log(purpleQuery)
+console.log(allArticles)
