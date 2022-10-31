@@ -1,0 +1,173 @@
+//template literals
+
+
+let name = "Martynas";
+let count = 14;
+let price = 12.23;
+
+console.log(`Name vardas yra ${name}`)
+console.log(`Suma: ${count+price}`)
+
+
+//array destructor
+
+let [firstName, middleName, lastName] = ['Dylan', 'Coding God', 'Israel'];
+
+console.log(firstName)
+console.log(middleName)
+console.log(lastName)
+
+lastName = 'Clements';
+console.log(lastName)
+
+
+//object destructor - pataisyt reik
+const personalInformation = {
+    firstName: 'Dylan',
+    lastName: 'Israel',
+    city: 'Austin',
+    state: 'Texas',
+    zipCode: 73381
+};
+
+const {firstName: fn, lastName: ln} = personalInformation;
+console.log(`${fn} ${ln}`)
+
+
+//pataisyt reik
+function adressMaker (city, state) {
+    const newAdress = {newCity: city. newState: state};
+    console.log(newAdress);
+}
+
+function adressMakerUpdated(city, state){
+    const newAdress = {newCity: city,newState: state};
+    console.log(newAdress)
+
+}
+adressMakerUpdated(city: 'Kaunas', state:"Kauno")
+
+
+
+//Includes
+
+
+let students = ['Ieva','Tadas','Tomas','Romas'];
+const searchString = 'Tadas';
+if (students.includes('searchString')){
+    console.log(`radau... yra ${searchString}`)
+
+}
+else{
+    console.log(`Neradau studento`)
+}
+
+
+//Kazkas blogai
+
+
+
+
+//Seniau naudojamas budas
+
+/*function User(name,email,role){
+    this.name = name;
+    this.email = email;
+    this.role = role;
+
+}
+
+User.prototype.syHi = function(){
+
+    console.log(`Hi. I am ${this.name}. Me email is ${this.email}. My user role ${this.role}`)};
+
+
+User.prototype.showRole = function (){
+    console.log(`My role is ${this.role}`)
+};
+
+const userOne = new User('vardenis', 'Pavardenis', 'Admin');
+userOne.syHi();
+userOne.showRole();
+const userTwo = new User('Petras', 'Petraitis', 'student');
+userTwo.syHi();
+userOne.showRole();
+
+
+*/
+
+
+//Naujesnis budas su class ir constructor/ Daro ta pati, kaip ir senesnis budas
+
+/*
+class User{
+    constructor(name, email, role) {
+        this.name = name;
+        this.email = email;
+        this.role = role;
+    }
+    syHi(){
+        console.log(`Hi. I am ${this.name}. Me email is ${this.email}. My user role ${this.role}`)}
+    showRole(){
+        console.log(`My user role ${this.role}`)}
+}
+
+const userOne = new User('vardenis', 'Pavardenis', 'Admin');
+userOne.syHi();
+userOne.showRole();
+const userTwo = new User('Petras', 'Petraitis', 'student');
+userTwo.syHi();
+userOne.showRole();
+
+//Pabaiga Naujesnio budo
+
+
+
+class Gedimas{
+    constructor(gedimoPavadinimas, aprasymas, prioritetas) {
+        this.gedimoPavadinimas = gedimoPavadinimas; //reikia parinkti metoda
+        this.aprasymas = aprasymas;
+        this.prioritetas = prioritetas;
+        this.data =  new Date();
+    }
+    showGedimai(){
+        console.log(`\nPrioritetas: ${this.prioritetas}. Gautas gedimas - ${this.gedimoPavadinimas}.\nGedimo aprasymas. ${this.aprasymas}. Data: ${this.data}`)
+    }
+}
+
+
+const gedimasPirmas = new Gedimas('Interneto sutrikimas', 'Neveikia internetas po audros', 'skubu');
+gedimasPirmas.showGedimai();
+
+const gedimasAntras = new Gedimas('PC gedimas', 'Neisijungia kompiuteris. Neveikia nei deze, nei ekranas', 'nelabai skubu')
+gedimasAntras.showGedimai();
+
+
+
+///mokytojo dalis nebaigta, yra foto telefone
+class Support {
+    constructor(id) {
+        this.id = id;
+        this.date = Date.now()
+    }
+
+    setTittle(title) {
+        this.title = title
+    }
+
+    setDescription(description) {
+        this.description = description
+    }
+}
+
+
+let issue = new Support(1);
+issue.setTittle('sugedo kompas');
+issue.setDescription('Nesikrauna windows');
+issue.setPriority('Labai svarbu');
+
+for (let data of issue.getData()){
+    console.log
+}
+
+
