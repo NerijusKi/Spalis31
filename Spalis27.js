@@ -122,7 +122,7 @@ console.log(tottalPoints)
  */
 
 
-
+/*
 let catalog  = {
     grozine:[
         {
@@ -221,3 +221,8 @@ console.log("****************")
 //console.log(catalog.mokslineFantastika)
 //console.log(catalog.edukacine)
 //console.log(catalog)
+
+*/
+
+
+// SPALIS 31d.
