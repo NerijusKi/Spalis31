@@ -197,3 +197,8 @@ purple.addEventListener('click', ()=>{
 purple.addEventListener('click', ()=>{
     purple.style.textTransform = 'uppercase'
 })
+
+//pakeicia puslapio linku i kitm
+const links = document.querySelectorAll('a');
+for(const link of links){
+    link.href="http://kitm.lt"}
