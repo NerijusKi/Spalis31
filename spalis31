@@ -191,3 +191,9 @@ const purple = document.querySelector('.purple');
 purple.addEventListener('click', ()=>{
     purple.style.backgroundColor = 'purple';
 })
+
+
+//pakeicia i didziasias
+purple.addEventListener('click', ()=>{
+    purple.style.textTransform = 'uppercase'
+})
